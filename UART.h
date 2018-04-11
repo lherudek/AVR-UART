@@ -43,7 +43,6 @@ unsigned char UARTrx(unsigned char *data);
 void UARTstring(char* TX_string);
 //Add for float numbers: -Wl,-u,vfprintf -lprintf_flt -lm --- Toolchain > Linker > Misc..
 void UARTstringF(char *data, ...);
-
 void UARTreceiver();
 
 
