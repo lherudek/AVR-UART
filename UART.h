@@ -26,16 +26,13 @@
 #ifndef UART_H
 #define UART_H
 
-#define F_CPU					1000000UL
+#define F_CPU				1000000UL
 #define UART_BAUDRATE			19200UL
 
 #define UART_TIMEOUT			10000UL //cca in us
 
-
 #define UART_OK			0x01
 #define UART_ERROR		0x00
-
-
 
 void UART_init();
 void UARTtx(char data);
@@ -44,6 +41,5 @@ void UARTstring(char* TX_string);
 //Add for float numbers: -Wl,-u,vfprintf -lprintf_flt -lm --- Toolchain > Linker > Misc..
 void UARTstringF(char *data, ...);
 void UARTreceiver();
-
 
 #endif /* UART_H */
